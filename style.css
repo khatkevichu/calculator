@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    font-family:'Courier Prime', monospace;
+}
+
+body {
+    background-color: #e6e7fa;
+}
+
+.calculator {
+    width: 325px;
+    height: 425px;
+    margin: 100px auto;
+    padding: 20px 20px 9px;
+    position:relative;
+    background: #f0fff0;
+    border: 2px #d2f2d2;
+}
+
+.head {
+    overflow: hidden;
+}
+
+#display {
+    height: 80px;
+    width: 100%;
+    margin-bottom: 11px;
+    background: #d2f2d2;
+    font-size: 25px;
+    line-height: 40px;
+    color: black;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+.keys button {
+    float: left;
+    position: relative;
+    cursor: pointer;
+    width: 66px;
+    height: 56px;
+    background: #d2f2d2;
+    margin: 0 7px 11px 0;
+    color: black;
+    line-height: 56px;
+    text-align: center;
+    transition: all 0.2s;
+    border: none;
+}
+
+
+.keys button.operator {
+    background: #f2f531);
+}
+
+.keys button#result {
+    color: #ffb6c1;
+    width: 140px;
+}
+
+.keys button.number:hover {
+    background: rgba(255,255,255,0.8);
+    color: #333;
+}
+
+.keys button.operator:hover, button#decimal:hover {
+    background: #fffacd;
+    color: #333;
+}
+.keys button#result:hover {
+    background: #cf7106;
+    color: #ffffff;
+}
+
+.keys button.clear:hover {
+  border-radius:190px;
+    background: rgba(0,0,0,0.1);
+    color: white;
+}
+
+.keys button:active {
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.2);
+    top: 4px;
+}
+
+.keys button#result:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+.keys button.clear:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
+}
